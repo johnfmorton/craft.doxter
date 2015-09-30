@@ -44,7 +44,7 @@ class DoxterPlugin extends BasePlugin
 				'image'         => 'Craft\\DoxterShortcodes@image',
 				'audio'         => 'Craft\\DoxterShortcodes@audio',
 				'updates'       => 'Craft\\DoxterShortcodes@updates',
-				'vimeo:youtube' => 'Craft\\DoxterShortcodes@video',
+				'vimeo:youtube:html5' => 'Craft\\DoxterShortcodes@video',
 			);
 
 			doxter()->registerShortcodes($shortcodes);

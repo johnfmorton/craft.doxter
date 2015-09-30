@@ -21,4 +21,18 @@
 		allowfullscreen>
 	</iframe>
 	{%- endif -%}
+	{% if name == 'html5' %}
+		{% includeJsFile 'https://vjs.zencdn.net/4.12/video.js' %}
+		{% includeCssFile 'https://vjs.zencdn.net/4.12/video-js.css' %}
+		<video
+			id="laracasts-video_html5_api"
+			class="vjs-tech"
+			preload="auto"
+			data-setup="{}"
+			poster="//laracasts.s3.amazonaws.com/images/video-thumbnails/php-7-6.jpg"
+			src="//player.vimeo.com/external/137475691.hd.mp4?s=34727b2c906656c55db6c16f1d7588ad&amp;profile_id=119">
+			<source src="//player.vimeo.com/external/137475691.sd.mp4?s=f56fe5ac5ac0a4341d031ab724927135&amp;profile_id=112" type="video/mp4" data-res="SD">
+			<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video.</a></p>
+		</video>
+	{%- endif -%}
 </div>
